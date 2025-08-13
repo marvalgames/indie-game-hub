@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Game Hub - News & Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">🎮 Indie Game Hub</h1>
+                <ul class="nav-links">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Gateway to Indie Gaming</h2>
+                <p>Discover the latest news, resources, and hidden gems from the indie game world</p>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search news, games, or resources...">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news-section">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="releases">New Releases</button>
+                    <button class="filter-btn" data-filter="updates">Updates</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+                <div id="newsContainer" class="news-grid">
+                    <article class="news-card" data-category="releases">
+                        <img src="https://via.placeholder.com/400x200/4A90E2/ffffff?text=Pixel+Quest+2" alt="Pixel Quest 2">
+                        <div class="news-content">
+                            <span class="news-category">New Release</span>
+                            <h3>Pixel Quest 2 Launches on Multiple Platforms</h3>
+                            <p>The highly anticipated sequel to the indie hit Pixel Quest is now available on PC, Switch, and mobile platforms.</p>
+                            <time>2 hours ago</time>
+                        </div>
+                    </article>
+                    <article class="news-card" data-category="updates">
+                        <img src="https://via.placeholder.com/400x200/E74C3C/ffffff?text=Moonlight+Valley" alt="Moonlight Valley">
+                        <div class="news-content">
+                            <span class="news-category">Update</span>
+                            <h3>Moonlight Valley Gets Major Content Update</h3>
+                            <p>The farming sim adds new crops, animals, and a whole new region to explore in its biggest update yet.</p>
+                            <time>5 hours ago</time>
+                        </div>
+                    </article>
+                    <article class="news-card" data-category="events">
+                        <img src="https://via.placeholder.com/400x200/2ECC71/ffffff?text=Game+Jam" alt="Global Game Jam">
+                        <div class="news-content">
+                            <span class="news-category">Event</span>
+                            <h3>Global Game Jam 2025 Registration Opens</h3>
+                            <p>Join thousands of developers worldwide for the largest game creation event. Register now for early bird pricing.</p>
+                            <time>1 day ago</time>
+                        </div>
+                    </article>
+                    <article class="news-card" data-category="releases">
+                        <img src="https://via.placeholder.com/400x200/9B59B6/ffffff?text=Echo+Chamber" alt="Echo Chamber">
+                        <div class="news-content">
+                            <span class="news-category">New Release</span>
+                            <h3>Echo Chamber: A Mind-Bending Puzzle Adventure</h3>
+                            <p>Solve acoustic puzzles and manipulate sound waves in this innovative indie title from Studio Resonance.</p>
+                            <time>2 days ago</time>
+                        </div>
+                    </article>
+                </div>
+                <button class="load-more">Load More News</button>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-section">
+            <div class="container">
+                <h2>Featured Games</h2>
+                <div class="featured-grid">
+                    <div class="featured-game">
+                        <img src="https://via.placeholder.com/600x400/34495E/ffffff?text=Starlight+Odyssey" alt="Starlight Odyssey">
+                        <div class="featured-info">
+                            <h3>Starlight Odyssey</h3>
+                            <p class="game-genre">Space Exploration RPG</p>
+                            <p>Explore a procedurally generated galaxy, build your crew, and uncover the mysteries of ancient civilizations.</p>
+                            <div class="game-links">
+                                <a href="#" class="btn-primary">Learn More</a>
+                                <a href="#" class="btn-secondary">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-game">
+                        <img src="https://via.placeholder.com/600x400/16A085/ffffff?text=Garden+Tales" alt="Garden Tales">
+                        <div class="featured-info">
+                            <h3>Garden Tales</h3>
+                            <p class="game-genre">Cozy Life Sim</p>
+                            <p>Create your dream garden, befriend magical creatures, and restore harmony to the enchanted forest.</p>
+                            <div class="game-links">
+                                <a href="#" class="btn-primary">Learn More</a>
+                                <a href="#" class="btn-secondary">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <h2>Developer Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">🛠️</div>
+                        <h3>Game Engines</h3>
+                        <ul>
+                            <li><a href="https://godotengine.org/">Godot Engine</a> - Free and open-source</li>
+                            <li><a href="https://unity.com/">Unity</a> - Popular cross-platform engine</li>
+                            <li><a href="https://www.unrealengine.com/">Unreal Engine</a> - AAA quality tools</li>
+                            <li><a href="https://www.construct.net/">Construct 3</a> - No-code game maker</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🎨</div>
+                        <h3>Art & Assets</h3>
+                        <ul>
+                            <li><a href="https://opengameart.org/">OpenGameArt</a> - Free game assets</li>
+                            <li><a href="https://itch.io/game-assets">itch.io Assets</a> - Indie asset marketplace</li>
+                            <li><a href="https://www.kenney.nl/">Kenney</a> - High-quality free assets</li>
+                            <li><a href="https://freesound.org/">Freesound</a> - Audio library</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🚀</div>
+                        <h3>Publishing Platforms</h3>
+                        <ul>
+                            <li><a href="https://itch.io/">itch.io</a> - Indie game marketplace</li>
+                            <li><a href="https://store.steampowered.com/">Steam</a> - Largest PC platform</li>
+                            <li><a href="https://gamejolt.com/">Game Jolt</a> - Indie community platform</li>
+                            <li><a href="https://www.gog.com/">GOG</a> - DRM-free distribution</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h3>Learning</h3>
+                        <ul>
+                            <li><a href="https://www.gamedeveloper.com/">Game Developer</a> - Industry news & tutorials</li>
+                            <li><a href="https://www.gdcvault.com/free">GDC Vault</a> - Conference talks</li>
+                            <li><a href="https://brackeys.com/">Brackeys</a> - Game dev tutorials</li>
+                            <li><a href="https://www.reddit.com/r/gamedev/">r/gamedev</a> - Community forum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community-section">
+            <div class="container">
+                <h2>Join the Community</h2>
+                <div class="community-content">
+                    <div class="community-card">
+                        <h3>Discord Server</h3>
+                        <p>Connect with fellow indie game enthusiasts and developers in our active Discord community.</p>
+                        <a href="#" class="btn-primary">Join Discord</a>
+                    </div>
+                    <div class="community-card">
+                        <h3>Newsletter</h3>
+                        <p>Get weekly indie game news and exclusive content delivered to your inbox.</p>
+                        <form id="newsletterForm">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="community-card">
+                        <h3>Submit Your Game</h3>
+                        <p>Are you an indie developer? Submit your game to be featured on our platform.</p>
+                        <a href="#" class="btn-primary">Submit Game</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Indie Game Hub</h4>
+                <p>Your premier destination for indie game news, resources, and community. Supporting independent developers worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#news">Latest News</a></li>
+                    <li><a href="#featured">Featured Games</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Twitch</a>
+                    <a href="#">RSS Feed</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Indie Game Hub. Made with ❤️ for the indie game community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
